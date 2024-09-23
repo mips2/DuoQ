@@ -152,4 +152,4 @@ def run_app():
     app = QApplication(sys.argv)
     gui = CodeAssistGUI()
     gui.show()
-    sys.exit(app.exec_())
+    # Note: The event loop is now managed by qasync in main.py

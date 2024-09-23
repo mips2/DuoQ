@@ -69,3 +69,39 @@ Traceback (most recent call last):
                           ^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: type object 'QsciScintilla' has no attribute 'NoMargin'
 2024-09-23 09:10:46,318 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:13:24,893 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:13:25,283 - CodeAssist - ERROR - API request failed with status 400: {
+    "error": {
+        "message": "you must provide a model parameter",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": null
+    }
+}
+
+2024-09-23 09:13:42,492 - CodeAssist - INFO - Language changed to JavaScript
+2024-09-23 09:13:43,302 - CodeAssist - INFO - Language changed to Python
+2024-09-23 09:15:00,222 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:15:00,682 - CodeAssist - ERROR - API request failed with status 400: {
+  "error": {
+    "message": "Missing required parameter: 'messages'.",
+    "type": "invalid_request_error",
+    "param": "messages",
+    "code": "missing_required_parameter"
+  }
+}
+2024-09-23 09:15:03,177 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:15:03,789 - CodeAssist - ERROR - API request failed with status 400: {
+  "error": {
+    "message": "Missing required parameter: 'messages'.",
+    "type": "invalid_request_error",
+    "param": "messages",
+    "code": "missing_required_parameter"
+  }
+}
+2024-09-23 09:16:49,704 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:16:51,071 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:16:51,507 - CodeAssist - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:16:53,092 - CodeAssist - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:17:40,083 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:17:43,554 - CodeAssist - DEBUG - Suggestion fetched and cached.
