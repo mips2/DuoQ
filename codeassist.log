@@ -105,3 +105,221 @@ AttributeError: type object 'QsciScintilla' has no attribute 'NoMargin'
 2024-09-23 09:16:53,092 - CodeAssist - DEBUG - Suggestion fetched and cached.
 2024-09-23 09:17:40,083 - CodeAssist - DEBUG - Requesting suggestion from API.
 2024-09-23 09:17:43,554 - CodeAssist - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:23:27,669 - CodeAssist - DEBUG - Requesting suggestion from API.
+2024-09-23 09:23:37,295 - CodeAssist - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:26:43,867 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 91, in __init__
+    self.setup_logic()
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQGUI' object has no attribute 'setup_logic'
+2024-09-23 09:27:28,402 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:27:34,760 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:27:35,764 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:27:43,446 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:27:44,455 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:27:45,832 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:27:46,638 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:27:47,630 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:27:48,752 - DuoQ - INFO - Suggestion Mode set to Manual.
+2024-09-23 09:27:48,789 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:29:38,734 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 138, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 153, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 174, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 46, in setup_indicator
+    self.indicatorSetForeground(QColor("gray"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForeground'
+2024-09-23 09:29:48,835 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 136, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 151, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 172, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 46, in setup_indicator
+    self.indicatorSetForeground(QColor("gray"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForeground'
+2024-09-23 09:31:53,370 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 136, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 151, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 172, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 46, in setup_indicator
+    self.indicatorSetForegroundColor(self.suggestion_indicator, QColor("gray"))  # Corrected method
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForegroundColor'
+2024-09-23 09:33:30,772 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 136, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 151, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 172, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 46, in setup_indicator
+    self.indicatorSetForeground(self.suggestion_indicator, QColor("gray"))  # Corrected method
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForeground'
+2024-09-23 09:35:27,087 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:35:31,606 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:36:37,292 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:36:40,387 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:39:12,905 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 133, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 148, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 169, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 46, in setup_indicator
+    self.indicatorSetForeground(self.suggestion_indicator, QColor("gray"))  # Corrected method
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForeground'
+2024-09-23 09:39:45,066 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:39:47,730 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:39:48,730 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:39:52,961 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:39:55,144 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:40:01,401 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:40:02,398 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:40:06,426 - DuoQ - INFO - Suggestion Mode set to Manual.
+2024-09-23 09:40:10,911 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:17,911 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:20,611 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:21,610 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:26,122 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:27,113 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:32,862 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:33,872 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:38,950 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:39,946 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:46,188 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:47,181 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:42:53,166 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:42:54,163 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:00,872 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:01,867 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:07,944 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:08,941 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:14,642 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:15,636 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:22,153 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:23,147 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:29,829 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:30,823 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:37,012 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:38,010 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:43,857 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:44,848 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:51,053 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:52,059 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:43:58,097 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:43:59,082 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:05,663 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:06,664 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:12,917 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:13,925 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:21,365 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:22,369 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:29,771 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:30,771 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:37,050 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:38,061 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:44,366 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:45,368 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:44:52,803 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:44:53,805 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:02,846 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:03,857 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:11,696 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:12,694 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:21,516 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:22,511 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:30,960 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:31,965 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:40,031 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:41,023 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:49,600 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:45:50,597 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:45:59,014 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:00,010 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:10,070 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:11,074 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:19,935 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:20,926 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:29,046 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:30,047 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:38,776 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:39,780 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:48,462 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:49,462 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:46:58,438 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:46:59,436 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:47:08,111 - DuoQ - DEBUG - Suggestion fetched and cached.
+2024-09-23 09:47:09,100 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:47:19,465 - DuoQ - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 16, in main
+    gui = DuoQGUI()
+          ^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 134, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 147, in init_ui
+    self.init_home_tab()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 166, in init_home_tab
+    self.code_editor = DuoQEditor(language=self.lang_combo.currentText(), inline_suggestions=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 22, in __init__
+    self.setup_indicator()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 44, in setup_indicator
+    self.indicatorSetForeground(self.suggestion_indicator, QColor("gray"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DuoQEditor' object has no attribute 'indicatorSetForeground'
+2024-09-23 09:47:29,225 - DuoQ - INFO - Inline Code Suggestions Disabled.
+2024-09-23 09:47:35,061 - DuoQ - DEBUG - Requesting suggestion from API.
+2024-09-23 09:47:38,252 - DuoQ - DEBUG - Suggestion fetched and cached.

@@ -4,7 +4,7 @@ import logging
 from config import Config
 
 def setup_logger():
-    logger = logging.getLogger("CodeAssist")
+    logger = logging.getLogger("DuoQ")
     logger.setLevel(logging.DEBUG)
 
     # File handler

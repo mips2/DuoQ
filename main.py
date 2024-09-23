@@ -1,7 +1,7 @@
 # main.py
 
 import sys
-from gui import CodeAssistGUI
+from gui import DuoQGUI
 from logger import logger
 from PyQt5.QtWidgets import QApplication
 import qasync
@@ -13,7 +13,7 @@ def main():
         loop = qasync.QEventLoop(app)
         asyncio.set_event_loop(loop)
         with loop:
-            gui = CodeAssistGUI()
+            gui = DuoQGUI()
             gui.show()
             loop.run_forever()
     except Exception as e:
