@@ -1,0 +1,71 @@
+2024-09-23 09:05:04,311 - CodeAssist - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 9, in main
+    run_app()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 138, in run_app
+    gui = CodeAssistGUI()
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 68, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 84, in init_ui
+    self.code_editor = CodeEditor(language=self.lang_combo.currentText())
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 18, in __init__
+    self.setup_editor()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 30, in setup_editor
+    self.setMarginsFont("Courier")
+TypeError: setMarginsFont(self, f: QFont): argument 1 has unexpected type 'str'
+2024-09-23 09:06:01,628 - CodeAssist - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 9, in main
+    run_app()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 146, in run_app
+    gui = CodeAssistGUI()
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 76, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 95, in init_ui
+    self.suggestions_panel = SuggestionsPanel()
+                             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 55, in __init__
+    self.setup_panel()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 60, in setup_panel
+    self.setMarginLineNumbers(False)
+TypeError: setMarginLineNumbers(self, margin: int, lnrs: bool): not enough arguments
+2024-09-23 09:07:07,309 - CodeAssist - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 9, in main
+    run_app()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 151, in run_app
+    gui = CodeAssistGUI()
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 81, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 100, in init_ui
+    self.suggestions_panel = SuggestionsPanel()
+                             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 55, in __init__
+    self.setup_panel()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 63, in setup_panel
+    self.setBackgroundColor(Qt.white)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuggestionsPanel' object has no attribute 'setBackgroundColor'
+2024-09-23 09:07:53,063 - CodeAssist - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\main.py", line 9, in main
+    run_app()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 151, in run_app
+    gui = CodeAssistGUI()
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 81, in __init__
+    self.init_ui()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 100, in init_ui
+    self.suggestions_panel = SuggestionsPanel()
+                             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 55, in __init__
+    self.setup_panel()
+  File "C:\Users\daisy\OneDrive\Documents\Resume Projects\DuoQ\DuoQ\gui.py", line 66, in setup_panel
+    self.setMarginType(0, QsciScintilla.NoMargin)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'QsciScintilla' has no attribute 'NoMargin'
+2024-09-23 09:10:46,318 - CodeAssist - DEBUG - Requesting suggestion from API.
